@@ -1,5 +1,4 @@
 # Michel Grimminck 2016, copy freely
-
 import time
 
 from picamera.array import PiRGBArray
