@@ -30,7 +30,9 @@ How to use:
 Notes
 =====
 By default, the program looks at the center of the pi camera. You can change this by alterting the source code in focus.py
+
 0.0  0.33   0.66   1
+
 ......|......|......
 ......|......|......
 ------+------+------ 0.33
