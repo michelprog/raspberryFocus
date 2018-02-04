@@ -1,5 +1,4 @@
-# Michel Grimminck 2016, copy freely
-
+# Michel Grimminck 2018
 import time
 
 from picamera.array import PiRGBArray
@@ -16,10 +15,10 @@ camera.start_preview()
 # wait for the camera to settle
 time.sleep(2)
 
-rawCapture = PiRGBArray(camera, size=(width,height))
+rgbCapture = PiRGBArray(camera, size=(width,height))
 while True:
-    camera.capture(rawCapture, format="bgr")
+    camera.capture(rgbCapture, format="bgr")
     # focus on center of the image
-    sumgrad=MDGImageLib.GradientSum(rawCapture.array,int(0.333*width),int(0.333*height),int(0.666*width),int(0.666*height))
+    sumgrad=MDGImageLib.GradientSum(rgbCapture.array,int(0.333*width),int(0.333*height),int(0.666*width),int(0.666*height))
     print (sumgrad)
-    rawCapture.truncate(0)
+    rgbCapture.truncate(0)
