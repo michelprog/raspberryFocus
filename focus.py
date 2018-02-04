@@ -1,4 +1,4 @@
-# Michel Grimminck 2016, copy freely
+# Michel Grimminck 2018
 import time
 
 from picamera.array import PiRGBArray
